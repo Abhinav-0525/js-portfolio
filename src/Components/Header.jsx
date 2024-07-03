@@ -23,7 +23,9 @@ const Header = () => {
     >
       <a href="#home">Home</a>
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#portfolio">Portfolio</a>
+      <a href={`https://abhinav-0525.github.io/Resume-profile/`} target="_blank" rel="noopener noreferrer">Resume</a>
       <a href="#footer">Contact</a>
     </div>
   );

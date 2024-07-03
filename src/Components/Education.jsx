@@ -23,33 +23,29 @@ const imageAltText = "purple and blue abstract background";
 /**
  * Sort description that expands on your title on the Home component.
  */
-const description =
-  "Second-year undergrad pursuing my Bachelors degree at VNRVJIET, in Information Technology. I bring a diverse skill set, with a good grasp of data structures and algorithms and a passion for Web development. Proficient in Java, Python, JavaScript and I use MERN stack.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
-const skillsList = [
-  "Java, Python, JS",
-  "React",
-  "NodeJS",
-  "MongoDB, MySQL",
-  "ExpressJS",
-  "MaterialUI, AntDesign",
-];
+// const skillsList = [
+//   "Java, Python, JS",
+//   "React",
+//   "NodeJS",
+//   "MongoDB, MySQL",
+//   "ExpressJS",
+//   "MaterialUI, AntDesign",
+// ];
 
 /**
  * Use this to give more information about what you are passionate about,
  * how you best work, or even a quote. This will help someone learn more
  * about you on a professional level.
  */
-const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my skills in Web Technologies, I continually look for new and better ways to make tech accessible by all.";
 
-const About = () => {
+const Education = () => {
   return (
-    <section className="padding" id="about">
+    <section className="padding" id="education">
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
@@ -60,27 +56,18 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
-        <p className="">{description}</p>
+        <h2>Education</h2>
+        <p style={{textAlign:"center", fontWeight:"400", marginBottom:'0px'}}>{"VNRVJIET"}</p>
+        <p style={{textAlign:"center", marginTop:"5px"}}>{"B.Tech - Information Technology"}</p>
+        <p style={{textAlign:"center", marginTop:"5px"}}>{"CGPA - 8.9"}</p>
         <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
-          {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+        <p style={{textAlign:"center", fontWeight:"400", marginBottom:'0px'}}>{"Narayana Junior College"}</p>
+        <p style={{textAlign:"center", marginTop:"5px"}}>{"Intermediate - MPC"}</p>
+        <p style={{textAlign:"center", marginTop:"5px"}}>{"Percentage - 98%"}</p>
+        {/* <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p> */}
       </div>
     </section>
   );
 };
 
-export default About;
+export default Education;
